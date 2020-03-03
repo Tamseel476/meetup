@@ -17,16 +17,9 @@ const NewsletterBanner = (prop) => {
 
     return (
         <div className="jumbotron" style={style}>
-        <div className="container" style={{"max-width": "600px"}}>
-          <h1 className="display-4">Adventure Starts</h1>
-          
-          
-         
-         
-          
+        <div className="container" style={{"max-width": "300px"}}>
+          <h1 className="hello">Adventure Starts</h1>
 
-       
-        
       </div>
       </div>
     )

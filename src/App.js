@@ -7,6 +7,8 @@ import About from './About';
 import Adventures from './Adventures';
 import Navigation from './Navigation';
 import Register from './Register';
+import Login from './Login';
+import Logout from './Logout'
 
 
 const LayoutRoute =({location,path, exact,component}) =>{
@@ -43,6 +45,9 @@ const App=() =>{
             <LayoutRoute path ="/Contact" component={Contact}/>
             <LayoutRoute path ="/Adventures" component={Adventures}/>
             <LayoutRoute path ="/user/register" component={Register}/>
+            <LayoutRoute path ="/user/login" component={Login}/>
+            <LayoutRoute path ="/user/logout" component={Logout}/>
+
             </Switch>
             </BrowserRouter>
         </AppContext.Provider>

@@ -127,3 +127,21 @@ body {
     padding: 10px 20px;
     border-radius: 4px;
   }
+  .hello {
+    font-weight: 100;
+    color: darkblue;
+    text-align: center;
+    
+    
+  }
+
+  @media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }

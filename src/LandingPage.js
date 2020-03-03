@@ -1,18 +1,8 @@
 import React, {useState,useContext} from 'react';
-import AppContext from './AppContext';
-
-import Card from './Card.js';
-import CardLayout from './CardLayout.js';
-import Navigation from './Navigation.js';
-import Banner from './Banner.js';
-import LoadButton from './LoadButton';
-import SaveButton from './SaveButton';
 import NewsletterBanner from './NewsletterBanner'
 
-import LoadButton2 from './LoadButton2'
+
 import LoadFeedButton from './LoadFeedButton';
-import FeedForm from './FeedForm';
-import b from './b.jpg';
 
 
 function LandingPage() {
@@ -35,8 +25,6 @@ function LandingPage() {
       <center>
         <LoadFeedButton />
       </center>
-
-      <FeedForm/>
       
     </div>
    

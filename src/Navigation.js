@@ -1,6 +1,7 @@
 import React,{useContext} from 'react';
 import AppContext from './AppContext'
 import { Link } from 'react-router-dom';
+import './style.css';
 
 const Navigation = () => {
 
@@ -25,7 +26,7 @@ const Navigation = () => {
     )
 
     return(
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white">
         <button className="navbar-toggler" 
             type="button" 
             data-toggle="collapse" 
@@ -51,16 +52,21 @@ const Navigation = () => {
                 <li className="nav-item">
                     <Link className="nav-link" to="/Contact">Contact</Link>
                 </li>
+
             </ul>
         </div>
+        <button className="btn btn-warning" >
+                    <Link to="/user/register">Register</Link>
+                </button>
             {
-                globalstate.loggedIn===false &&
-                <button onClick={logIn} className="btn btn-primary">Login</button>
+                globalstate.loggedIn===true &&
+                <button onClick={logOut} className="btn btn-danger"><Link to ="/user/logout">Logout</Link></button>
             }
                         {
-                globalstate.loggedIn===true &&
-                <button onClick={logOut} className="btn btn-primary">Log out</button>
+                globalstate.loggedIn===false &&
+                <button onClick={logIn} className="btn btn-success"> <Link to="/user/login">Login</Link></button>
             }
+
     </nav> 
     )
 }
