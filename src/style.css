@@ -145,3 +145,10 @@ body {
       max-width: 320px;
     }
   }
+
+  h2 {
+    font-weight: 100;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(79, 98, 148);
+  }

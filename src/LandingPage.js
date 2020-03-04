@@ -22,10 +22,7 @@ function LandingPage() {
               
       />
 
-      <center>
-        <LoadFeedButton />
-      </center>
-      
+    
     </div>
    
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import CardLayout from './CardLayout';
+import LoadFeedButton from './LoadFeedButton';
 
 const Adventures = (prop) => {
 
@@ -49,7 +50,10 @@ const Adventures = (prop) => {
             
             />
             </CardLayout>
-            
+            <center>
+        <LoadFeedButton />
+      </center>
+      
             
         </div>
     )
